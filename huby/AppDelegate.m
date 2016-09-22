@@ -7,11 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#include "mruby.h"
-#include "mruby/compile.h"
+#import <objc/runtime.h>
+#import "RbEngine.h"
+
 #include <stdlib.h>
 #include <stdio.h>
-#import <objc/runtime.h>
 
 // https://developer.apple.com/reference/objectivec/1657527-objective_c_runtime
 // https://github.com/mruby/mruby/blob/master/src/class.c#L437
@@ -44,20 +44,17 @@ static mrb_value my_c_method(mrb_state *mrb, mrb_value self)
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    
-    mrb_state *mrb = mrb_open();
+    RbEngine *rbEngine = [RbEngine sharedManager];
+    mrb_state *mrb = [rbEngine mrb];
     if (!mrb) { /* handle error */ }
-    mrb_load_string(mrb, "puts 'hello world form mrb_load_string'");
+    [rbEngine execStringScript:@"puts 'hello world form mrb_load_string'"];
     
     struct RClass *mymodule = mrb_define_module(mrb, "MyModule");
     mrb_define_class_method(mrb, mymodule, "my_c_method", my_c_method, MRB_ARGS_NONE());
     NSString *homeDir = NSHomeDirectory();
     NSString *rbpath = [homeDir stringByAppendingPathComponent:@"demo.rb"];
     NSLog(@"rb path is %@", rbpath);
-    FILE *f = fopen([rbpath UTF8String], "r");
-    mrb_load_file(mrb, f);
-    
-    mrb_close(mrb);
+    [rbEngine execFileScript:rbpath];
 }
 
 
