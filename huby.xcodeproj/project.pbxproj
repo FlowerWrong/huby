@@ -13,8 +13,10 @@
 		CEFC17CC1D93CE5E00536B3F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFC17CA1D93CE5E00536B3F /* MainMenu.xib */; };
 		CEFC17D71D93CE5E00536B3F /* hubyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC17D61D93CE5E00536B3F /* hubyTests.m */; };
 		CEFC17E21D93CE5E00536B3F /* hubyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC17E11D93CE5E00536B3F /* hubyUITests.m */; };
-		CEFC17F01D93D07C00536B3F /* libmruby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFC17EF1D93D07C00536B3F /* libmruby.a */; };
 		CEFC17F41D93D86400536B3F /* RbEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC17F31D93D86400536B3F /* RbEngine.m */; };
+		CEFC17FF1D93E1F700536B3F /* init.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC17FE1D93E1F700536B3F /* init.m */; };
+		CEFC18021D93E23A00536B3F /* .keep in Resources */ = {isa = PBXBuildFile; fileRef = CEFC18011D93E23A00536B3F /* .keep */; };
+		CEFC18041D93E25100536B3F /* libmruby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFC18031D93E25100536B3F /* libmruby.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +50,11 @@
 		CEFC17DD1D93CE5E00536B3F /* hubyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hubyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFC17E11D93CE5E00536B3F /* hubyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hubyUITests.m; sourceTree = "<group>"; };
 		CEFC17E31D93CE5E00536B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEFC17EF1D93D07C00536B3F /* libmruby.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmruby.a; path = mruby/build/host/lib/libmruby.a; sourceTree = "<group>"; };
 		CEFC17F21D93D86400536B3F /* RbEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RbEngine.h; sourceTree = "<group>"; };
 		CEFC17F31D93D86400536B3F /* RbEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RbEngine.m; sourceTree = "<group>"; };
+		CEFC17FE1D93E1F700536B3F /* init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = init.m; sourceTree = "<group>"; };
+		CEFC18011D93E23A00536B3F /* .keep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .keep; sourceTree = "<group>"; };
+		CEFC18031D93E25100536B3F /* libmruby.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmruby.a; path = mruby/build/host/lib/libmruby.a; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEFC17F01D93D07C00536B3F /* libmruby.a in Frameworks */,
+				CEFC18041D93E25100536B3F /* libmruby.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +86,8 @@
 		CEFC17B61D93CE5D00536B3F = {
 			isa = PBXGroup;
 			children = (
-				CEFC17EF1D93D07C00536B3F /* libmruby.a */,
+				CEFC18001D93E23A00536B3F /* libs */,
+				CEFC17FB1D93E1E000536B3F /* extensions */,
 				CEFC17C11D93CE5E00536B3F /* huby */,
 				CEFC17D51D93CE5E00536B3F /* hubyTests */,
 				CEFC17E01D93CE5E00536B3F /* hubyUITests */,
@@ -147,6 +152,31 @@
 				CEFC17F31D93D86400536B3F /* RbEngine.m */,
 			);
 			name = engine;
+			sourceTree = "<group>";
+		};
+		CEFC17FB1D93E1E000536B3F /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC17FC1D93E1E000536B3F /* alert */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		CEFC17FC1D93E1E000536B3F /* alert */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC17FE1D93E1F700536B3F /* init.m */,
+			);
+			path = alert;
+			sourceTree = "<group>";
+		};
+		CEFC18001D93E23A00536B3F /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC18031D93E25100536B3F /* libmruby.a */,
+				CEFC18011D93E23A00536B3F /* .keep */,
+			);
+			path = libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFC18021D93E23A00536B3F /* .keep in Resources */,
 				CEFC17C91D93CE5E00536B3F /* Assets.xcassets in Resources */,
 				CEFC17CC1D93CE5E00536B3F /* MainMenu.xib in Resources */,
 			);
@@ -282,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEFC17C71D93CE5E00536B3F /* main.m in Sources */,
+				CEFC17FF1D93E1F700536B3F /* init.m in Sources */,
 				CEFC17C41D93CE5E00536B3F /* AppDelegate.m in Sources */,
 				CEFC17F41D93D86400536B3F /* RbEngine.m in Sources */,
 			);

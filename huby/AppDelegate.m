@@ -7,9 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import <objc/runtime.h>
 #import "RbEngine.h"
+#import <objc/runtime.h>
 
+#import "RbEngine.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -36,9 +37,11 @@ static mrb_value my_c_method(mrb_state *mrb, mrb_value self)
     return mrb_nil_value();
 }
 
+
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
+
 @end
 
 @implementation AppDelegate
