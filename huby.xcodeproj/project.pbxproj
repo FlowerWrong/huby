@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEFC17C41D93CE5E00536B3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC17C31D93CE5E00536B3F /* AppDelegate.m */; };
+		CEFC17C71D93CE5E00536B3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC17C61D93CE5E00536B3F /* main.m */; };
+		CEFC17C91D93CE5E00536B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFC17C81D93CE5E00536B3F /* Assets.xcassets */; };
+		CEFC17CC1D93CE5E00536B3F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFC17CA1D93CE5E00536B3F /* MainMenu.xib */; };
+		CEFC17D71D93CE5E00536B3F /* hubyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC17D61D93CE5E00536B3F /* hubyTests.m */; };
+		CEFC17E21D93CE5E00536B3F /* hubyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC17E11D93CE5E00536B3F /* hubyUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEFC17D31D93CE5E00536B3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEFC17B71D93CE5D00536B3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEFC17BE1D93CE5D00536B3F;
+			remoteInfo = huby;
+		};
+		CEFC17DE1D93CE5E00536B3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEFC17B71D93CE5D00536B3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEFC17BE1D93CE5D00536B3F;
+			remoteInfo = huby;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEFC17BF1D93CE5E00536B3F /* huby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huby.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFC17C21D93CE5E00536B3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEFC17C31D93CE5E00536B3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEFC17C61D93CE5E00536B3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEFC17C81D93CE5E00536B3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEFC17CB1D93CE5E00536B3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CEFC17CD1D93CE5E00536B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFC17D21D93CE5E00536B3F /* hubyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hubyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFC17D61D93CE5E00536B3F /* hubyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hubyTests.m; sourceTree = "<group>"; };
+		CEFC17D81D93CE5E00536B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFC17DD1D93CE5E00536B3F /* hubyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hubyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFC17E11D93CE5E00536B3F /* hubyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hubyUITests.m; sourceTree = "<group>"; };
+		CEFC17E31D93CE5E00536B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEFC17BC1D93CE5D00536B3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFC17CF1D93CE5E00536B3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFC17DA1D93CE5E00536B3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEFC17B61D93CE5D00536B3F = {
+			isa = PBXGroup;
+			children = (
+				CEFC17C11D93CE5E00536B3F /* huby */,
+				CEFC17D51D93CE5E00536B3F /* hubyTests */,
+				CEFC17E01D93CE5E00536B3F /* hubyUITests */,
+				CEFC17C01D93CE5E00536B3F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEFC17C01D93CE5E00536B3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC17BF1D93CE5E00536B3F /* huby.app */,
+				CEFC17D21D93CE5E00536B3F /* hubyTests.xctest */,
+				CEFC17DD1D93CE5E00536B3F /* hubyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEFC17C11D93CE5E00536B3F /* huby */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC17C21D93CE5E00536B3F /* AppDelegate.h */,
+				CEFC17C31D93CE5E00536B3F /* AppDelegate.m */,
+				CEFC17C81D93CE5E00536B3F /* Assets.xcassets */,
+				CEFC17CA1D93CE5E00536B3F /* MainMenu.xib */,
+				CEFC17CD1D93CE5E00536B3F /* Info.plist */,
+				CEFC17C51D93CE5E00536B3F /* Supporting Files */,
+			);
+			path = huby;
+			sourceTree = "<group>";
+		};
+		CEFC17C51D93CE5E00536B3F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC17C61D93CE5E00536B3F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEFC17D51D93CE5E00536B3F /* hubyTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC17D61D93CE5E00536B3F /* hubyTests.m */,
+				CEFC17D81D93CE5E00536B3F /* Info.plist */,
+			);
+			path = hubyTests;
+			sourceTree = "<group>";
+		};
+		CEFC17E01D93CE5E00536B3F /* hubyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC17E11D93CE5E00536B3F /* hubyUITests.m */,
+				CEFC17E31D93CE5E00536B3F /* Info.plist */,
+			);
+			path = hubyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEFC17BE1D93CE5D00536B3F /* huby */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFC17E61D93CE5E00536B3F /* Build configuration list for PBXNativeTarget "huby" */;
+			buildPhases = (
+				CEFC17BB1D93CE5D00536B3F /* Sources */,
+				CEFC17BC1D93CE5D00536B3F /* Frameworks */,
+				CEFC17BD1D93CE5D00536B3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = huby;
+			productName = huby;
+			productReference = CEFC17BF1D93CE5E00536B3F /* huby.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEFC17D11D93CE5E00536B3F /* hubyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFC17E91D93CE5E00536B3F /* Build configuration list for PBXNativeTarget "hubyTests" */;
+			buildPhases = (
+				CEFC17CE1D93CE5E00536B3F /* Sources */,
+				CEFC17CF1D93CE5E00536B3F /* Frameworks */,
+				CEFC17D01D93CE5E00536B3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEFC17D41D93CE5E00536B3F /* PBXTargetDependency */,
+			);
+			name = hubyTests;
+			productName = hubyTests;
+			productReference = CEFC17D21D93CE5E00536B3F /* hubyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEFC17DC1D93CE5E00536B3F /* hubyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFC17EC1D93CE5E00536B3F /* Build configuration list for PBXNativeTarget "hubyUITests" */;
+			buildPhases = (
+				CEFC17D91D93CE5E00536B3F /* Sources */,
+				CEFC17DA1D93CE5E00536B3F /* Frameworks */,
+				CEFC17DB1D93CE5E00536B3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEFC17DF1D93CE5E00536B3F /* PBXTargetDependency */,
+			);
+			name = hubyUITests;
+			productName = hubyUITests;
+			productReference = CEFC17DD1D93CE5E00536B3F /* hubyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEFC17B71D93CE5D00536B3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "king Yang";
+				TargetAttributes = {
+					CEFC17BE1D93CE5D00536B3F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					CEFC17D11D93CE5E00536B3F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CEFC17BE1D93CE5D00536B3F;
+					};
+					CEFC17DC1D93CE5E00536B3F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CEFC17BE1D93CE5D00536B3F;
+					};
+				};
+			};
+			buildConfigurationList = CEFC17BA1D93CE5D00536B3F /* Build configuration list for PBXProject "huby" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEFC17B61D93CE5D00536B3F;
+			productRefGroup = CEFC17C01D93CE5E00536B3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEFC17BE1D93CE5D00536B3F /* huby */,
+				CEFC17D11D93CE5E00536B3F /* hubyTests */,
+				CEFC17DC1D93CE5E00536B3F /* hubyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEFC17BD1D93CE5D00536B3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFC17C91D93CE5E00536B3F /* Assets.xcassets in Resources */,
+				CEFC17CC1D93CE5E00536B3F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFC17D01D93CE5E00536B3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFC17DB1D93CE5E00536B3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEFC17BB1D93CE5D00536B3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFC17C71D93CE5E00536B3F /* main.m in Sources */,
+				CEFC17C41D93CE5E00536B3F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFC17CE1D93CE5E00536B3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFC17D71D93CE5E00536B3F /* hubyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFC17D91D93CE5E00536B3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFC17E21D93CE5E00536B3F /* hubyUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEFC17D41D93CE5E00536B3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEFC17BE1D93CE5D00536B3F /* huby */;
+			targetProxy = CEFC17D31D93CE5E00536B3F /* PBXContainerItemProxy */;
+		};
+		CEFC17DF1D93CE5E00536B3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEFC17BE1D93CE5D00536B3F /* huby */;
+			targetProxy = CEFC17DE1D93CE5E00536B3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEFC17CA1D93CE5E00536B3F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEFC17CB1D93CE5E00536B3F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEFC17E41D93CE5E00536B3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CEFC17E51D93CE5E00536B3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CEFC17E71D93CE5E00536B3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = huby/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liveneeq.huby;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEFC17E81D93CE5E00536B3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = huby/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liveneeq.huby;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CEFC17EA1D93CE5E00536B3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = hubyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liveneeq.hubyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/huby.app/Contents/MacOS/huby";
+			};
+			name = Debug;
+		};
+		CEFC17EB1D93CE5E00536B3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = hubyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liveneeq.hubyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/huby.app/Contents/MacOS/huby";
+			};
+			name = Release;
+		};
+		CEFC17ED1D93CE5E00536B3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = hubyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liveneeq.hubyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = huby;
+			};
+			name = Debug;
+		};
+		CEFC17EE1D93CE5E00536B3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = hubyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liveneeq.hubyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = huby;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEFC17BA1D93CE5D00536B3F /* Build configuration list for PBXProject "huby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFC17E41D93CE5E00536B3F /* Debug */,
+				CEFC17E51D93CE5E00536B3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEFC17E61D93CE5E00536B3F /* Build configuration list for PBXNativeTarget "huby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFC17E71D93CE5E00536B3F /* Debug */,
+				CEFC17E81D93CE5E00536B3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEFC17E91D93CE5E00536B3F /* Build configuration list for PBXNativeTarget "hubyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFC17EA1D93CE5E00536B3F /* Debug */,
+				CEFC17EB1D93CE5E00536B3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEFC17EC1D93CE5E00536B3F /* Build configuration list for PBXNativeTarget "hubyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFC17ED1D93CE5E00536B3F /* Debug */,
+				CEFC17EE1D93CE5E00536B3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEFC17B71D93CE5D00536B3F /* Project object */;
+}
