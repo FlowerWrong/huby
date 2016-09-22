@@ -13,6 +13,7 @@
 		CEFC17CC1D93CE5E00536B3F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFC17CA1D93CE5E00536B3F /* MainMenu.xib */; };
 		CEFC17D71D93CE5E00536B3F /* hubyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC17D61D93CE5E00536B3F /* hubyTests.m */; };
 		CEFC17E21D93CE5E00536B3F /* hubyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC17E11D93CE5E00536B3F /* hubyUITests.m */; };
+		CEFC17F01D93D07C00536B3F /* libmruby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFC17EF1D93D07C00536B3F /* libmruby.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		CEFC17DD1D93CE5E00536B3F /* hubyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hubyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFC17E11D93CE5E00536B3F /* hubyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hubyUITests.m; sourceTree = "<group>"; };
 		CEFC17E31D93CE5E00536B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFC17EF1D93D07C00536B3F /* libmruby.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmruby.a; path = mruby/build/host/lib/libmruby.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFC17F01D93D07C00536B3F /* libmruby.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +79,7 @@
 		CEFC17B61D93CE5D00536B3F = {
 			isa = PBXGroup;
 			children = (
+				CEFC17EF1D93D07C00536B3F /* libmruby.a */,
 				CEFC17C11D93CE5E00536B3F /* huby */,
 				CEFC17D51D93CE5E00536B3F /* hubyTests */,
 				CEFC17E01D93CE5E00536B3F /* hubyUITests */,
@@ -404,8 +408,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/mruby/include";
 				INFOPLIST_FILE = huby/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mruby/build/host/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liveneeq.huby;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,8 +425,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/mruby/include";
 				INFOPLIST_FILE = huby/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mruby/build/host/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liveneeq.huby;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

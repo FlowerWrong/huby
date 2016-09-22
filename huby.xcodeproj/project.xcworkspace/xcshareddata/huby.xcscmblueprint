@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "07DDC7B40C29747F3E46316E53B77251AFB41824",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "07DDC7B40C29747F3E46316E53B77251AFB41824" : 9223372036854775807,
+    "C234C1E9A41CBFBE2C1BE438DDEEEC8A827829BE" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2F606B35-FA84-401C-ABED-B75384D4E724",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "07DDC7B40C29747F3E46316E53B77251AFB41824" : "huby\/",
+    "C234C1E9A41CBFBE2C1BE438DDEEEC8A827829BE" : "huby\/mruby\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "huby",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "huby.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/FlowerWrong\/huby.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "07DDC7B40C29747F3E46316E53B77251AFB41824"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mruby\/mruby.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C234C1E9A41CBFBE2C1BE438DDEEEC8A827829BE"
+    }
+  ]
+}
