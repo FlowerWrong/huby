@@ -25,3 +25,7 @@ MyModule.my_c_method('NSAlert')
 
 * [ ] mruby engine
 * [ ] extension system
+
+## References
+
+* [mruby libraries](http://mruby.org/libraries/)
