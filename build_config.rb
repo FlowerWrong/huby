@@ -7,6 +7,7 @@ MRuby::Build.new do |conf|
   else
     toolchain :gcc
   end
+  # toolchain :clang
 
   enable_debug
 
@@ -20,7 +21,7 @@ MRuby::Build.new do |conf|
   # conf.gem :git => 'git@github.com:masuidrive/mrbgems-example.git', :branch => 'master', :options => '-v'
 
   # custom mrbgems
-  conf.cc.flags << '-DMRB_INT64'
+  # conf.cc.flags << '-DMRB_INT64'
   conf.gem github: 'jbreeden/mruby-libuv'
   conf.cc.flags << `pkg-config libuv --cflags`.strip
   conf.linker.flags << `pkg-config libuv --libs`.strip
@@ -139,18 +140,3 @@ MRuby::Build.new('bench') do |conf|
 
   conf.gembox 'default'
 end
-
-# Define cross build settings
-# MRuby::CrossBuild.new('32bit') do |conf|
-#   toolchain :gcc
-#
-#   conf.cc.flags << "-m32"
-#   conf.linker.flags << "-m32"
-#
-#   conf.build_mrbtest_lib_only
-#
-#   conf.gem 'examples/mrbgems/c_and_ruby_extension_example'
-#
-#   conf.test_runner.command = 'env'
-#
-# end

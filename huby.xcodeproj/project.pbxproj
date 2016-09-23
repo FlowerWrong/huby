@@ -454,7 +454,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/mruby/include";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/mruby/include",
+					"$(SRCROOT)/mruby/build/mrbgems/mruby-libuv/headers",
+					"$(SRCROOT)/mruby/build/mrbgems/mruby-libuv/include",
+				);
 				INFOPLIST_FILE = huby/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -471,7 +475,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/mruby/include";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/mruby/include",
+					"$(SRCROOT)/mruby/build/mrbgems/mruby-libuv/headers",
+					"$(SRCROOT)/mruby/build/mrbgems/mruby-libuv/include",
+				);
 				INFOPLIST_FILE = huby/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -552,6 +560,7 @@
 				CEFC17E81D93CE5E00536B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEFC17E91D93CE5E00536B3F /* Build configuration list for PBXNativeTarget "hubyTests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +569,7 @@
 				CEFC17EB1D93CE5E00536B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEFC17EC1D93CE5E00536B3F /* Build configuration list for PBXNativeTarget "hubyUITests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +578,7 @@
 				CEFC17EE1D93CE5E00536B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

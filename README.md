@@ -8,8 +8,8 @@ git submodule init
 
 git submodule foreach git pull
 
-cd mruby
-make test
+# build mruby
+rake build_mruby
 
 vim ~/demo.rb
 ```
