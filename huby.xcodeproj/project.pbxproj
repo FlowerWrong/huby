@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE3F0C381D958FA900A9BFAB /* libuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3F0C371D958FA900A9BFAB /* libuv.a */; };
 		CEFC17C41D93CE5E00536B3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC17C31D93CE5E00536B3F /* AppDelegate.m */; };
 		CEFC17C71D93CE5E00536B3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC17C61D93CE5E00536B3F /* main.m */; };
 		CEFC17C91D93CE5E00536B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFC17C81D93CE5E00536B3F /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE3F0C371D958FA900A9BFAB /* libuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuv.a; path = libuv/build/Release/libuv.a; sourceTree = SOURCE_ROOT; };
 		CEFC17BF1D93CE5E00536B3F /* huby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFC17C21D93CE5E00536B3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEFC17C31D93CE5E00536B3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3F0C381D958FA900A9BFAB /* libuv.a in Frameworks */,
 				CEFC18041D93E25100536B3F /* libmruby.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,6 +176,7 @@
 		CEFC18001D93E23A00536B3F /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				CE3F0C371D958FA900A9BFAB /* libuv.a */,
 				CEFC18031D93E25100536B3F /* libmruby.a */,
 				CEFC18011D93E23A00536B3F /* .keep */,
 			);
@@ -456,14 +460,14 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/mruby/include",
-					"$(SRCROOT)/mruby/build/mrbgems/mruby-libuv/headers",
-					"$(SRCROOT)/mruby/build/mrbgems/mruby-libuv/include",
+					"$(SRCROOT)/libuv/include",
 				);
 				INFOPLIST_FILE = huby/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/mruby/build/host/lib",
+					"$(PROJECT_DIR)/libuv/build/Release",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liveneeq.huby;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -477,14 +481,14 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/mruby/include",
-					"$(SRCROOT)/mruby/build/mrbgems/mruby-libuv/headers",
-					"$(SRCROOT)/mruby/build/mrbgems/mruby-libuv/include",
+					"$(SRCROOT)/libuv/include",
 				);
 				INFOPLIST_FILE = huby/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/mruby/build/host/lib",
+					"$(PROJECT_DIR)/libuv/build/Release",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liveneeq.huby;
 				PRODUCT_NAME = "$(TARGET_NAME)";

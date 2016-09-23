@@ -1,6 +1,17 @@
 require 'fileutils'
 
-task default: %w[build_mruby]
+task default: %w[build_libuv]
+
+task :build_libuv do
+  cd 'libuv'
+  rm_rf 'build'
+  sh 'git clone https://chromium.googlesource.com/external/gyp.git build/gyp'
+  sh './gyp_uv.py -f xcode'
+  sh 'xcodebuild -ARCHS="x86_64" -project uv.xcodeproj -configuration Release -target All'
+  rm('.DS_Store')
+  rm('build/.DS_Store')
+  cd '..'
+end
 
 task :build_mruby do
   mv('./mruby/build_config.rb', './build_config_copy.rb')

@@ -1,3 +1,6 @@
 [submodule "mruby"]
 	path = mruby
 	url = https://github.com/mruby/mruby.git
+[submodule "libuv"]
+	path = libuv
+	url = https://github.com/libuv/libuv.git

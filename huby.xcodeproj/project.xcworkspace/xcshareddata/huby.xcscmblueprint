@@ -5,17 +5,24 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "E44DB982BFFA2C5D8E8B4670F62226FF0023D4DD" : 9223372036854775807,
-    "C234C1E9A41CBFBE2C1BE438DDEEEC8A827829BE" : 9223372036854775807
+    "C234C1E9A41CBFBE2C1BE438DDEEEC8A827829BE" : 9223372036854775807,
+    "BC09C09DC2853BA9B3A84860F78F2E9FD790D8C3" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2F606B35-FA84-401C-ABED-B75384D4E724",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "E44DB982BFFA2C5D8E8B4670F62226FF0023D4DD" : "huby\/",
-    "C234C1E9A41CBFBE2C1BE438DDEEEC8A827829BE" : "huby\/mruby\/"
+    "C234C1E9A41CBFBE2C1BE438DDEEEC8A827829BE" : "huby\/mruby\/",
+    "BC09C09DC2853BA9B3A84860F78F2E9FD790D8C3" : "huby\/libuv\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "huby",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "huby.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/libuv\/libuv.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BC09C09DC2853BA9B3A84860F78F2E9FD790D8C3"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mruby\/mruby.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",

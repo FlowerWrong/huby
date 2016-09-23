@@ -9,6 +9,7 @@ git submodule init
 git submodule foreach git pull
 
 # build mruby
+rake build_libuv
 rake build_mruby
 
 vim ~/demo.rb
