@@ -8,8 +8,8 @@ task :build_libuv do
   sh 'git clone https://chromium.googlesource.com/external/gyp.git build/gyp'
   sh './gyp_uv.py -f xcode'
   sh 'xcodebuild -ARCHS="x86_64" -project uv.xcodeproj -configuration Release -target All'
-  rm('.DS_Store')
-  rm('build/.DS_Store')
+  rm('.DS_Store', force: true)
+  rm('build/.DS_Store', force: true)
   cd '..'
 end
 
