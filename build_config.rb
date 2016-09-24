@@ -21,6 +21,14 @@ MRuby::Build.new do |conf|
   # conf.gem :git => 'git@github.com:masuidrive/mrbgems-example.git', :branch => 'master', :options => '-v'
 
   # custom mrbgems
+  conf.gem github: 'iij/mruby-io'
+  conf.gem github: 'iij/mruby-socket'
+  conf.gem github: 'iij/mruby-mtest'
+  conf.gem github: 'luisbebop/mruby-polarssl'
+
+  conf.gem github: 'iij/mruby-pack'
+  conf.gem github: 'monochromegane/mruby-secure-random'
+
   # conf.cc.flags << '-DMRB_INT64'
   conf.gem github: 'jbreeden/mruby-libuv'
   conf.cc.flags << `pkg-config libuv --cflags`.strip

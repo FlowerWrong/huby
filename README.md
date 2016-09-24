@@ -24,8 +24,14 @@ MyModule.my_c_method('NSAlert')
 
 ## TODO
 
+* [ ] openssl for mruby
 * [ ] mruby engine
 * [ ] extension system
+
+## Used mrubygems
+
+* [mruby-libuv](https://github.com/jbreeden/mruby-libuv)
+* [mruby-polarssl](https://github.com/luisbebop/mruby-polarssl)
 
 ## References
 
