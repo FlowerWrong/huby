@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE3F0C381D958FA900A9BFAB /* libuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3F0C371D958FA900A9BFAB /* libuv.a */; };
-		CED94D2B1D97A248007F74AB /* libmruby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CED94D2A1D97A248007F74AB /* libmruby.a */; };
-		CED94D3F1D97BFCE007F74AB /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CED94D3E1D97BFCE007F74AB /* libcurl.a */; };
-		CED94D4F1D97CA43007F74AB /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CED94D4B1D97C674007F74AB /* libcrypto.a */; };
+		CE56F0A01D980B690045BAEA /* libmruby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE56F09F1D980B690045BAEA /* libmruby.a */; };
+		CE56F0A21D980BC20045BAEA /* libuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE56F0A11D980BC20045BAEA /* libuv.a */; };
 		CEFC17C41D93CE5E00536B3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC17C31D93CE5E00536B3F /* AppDelegate.m */; };
 		CEFC17C71D93CE5E00536B3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC17C61D93CE5E00536B3F /* main.m */; };
 		CEFC17C91D93CE5E00536B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFC17C81D93CE5E00536B3F /* Assets.xcassets */; };
@@ -19,7 +17,6 @@
 		CEFC17E21D93CE5E00536B3F /* hubyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC17E11D93CE5E00536B3F /* hubyUITests.m */; };
 		CEFC17F41D93D86400536B3F /* RbEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC17F31D93D86400536B3F /* RbEngine.m */; };
 		CEFC17FF1D93E1F700536B3F /* init.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC17FE1D93E1F700536B3F /* init.m */; };
-		CEFC18021D93E23A00536B3F /* .keep in Resources */ = {isa = PBXBuildFile; fileRef = CEFC18011D93E23A00536B3F /* .keep */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CE3F0C371D958FA900A9BFAB /* libuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuv.a; path = libuv/build/Release/libuv.a; sourceTree = SOURCE_ROOT; };
-		CED94D2A1D97A248007F74AB /* libmruby.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmruby.a; path = mruby/build/host/lib/libmruby.a; sourceTree = SOURCE_ROOT; };
-		CED94D3E1D97BFCE007F74AB /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = curl/lib/.libs/libcurl.a; sourceTree = SOURCE_ROOT; };
-		CED94D4B1D97C674007F74AB /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = openssl/libcrypto.a; sourceTree = "<group>"; };
-		CED94D4D1D97C697007F74AB /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = openssl/libssl.a; sourceTree = "<group>"; };
+		CE56F09F1D980B690045BAEA /* libmruby.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmruby.a; path = mruby/build/host/lib/libmruby.a; sourceTree = "<group>"; };
+		CE56F0A11D980BC20045BAEA /* libuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuv.a; path = libuv/build/Release/libuv.a; sourceTree = "<group>"; };
 		CEFC17BF1D93CE5E00536B3F /* huby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFC17C21D93CE5E00536B3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEFC17C31D93CE5E00536B3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,7 +55,6 @@
 		CEFC17F21D93D86400536B3F /* RbEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RbEngine.h; sourceTree = "<group>"; };
 		CEFC17F31D93D86400536B3F /* RbEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RbEngine.m; sourceTree = "<group>"; };
 		CEFC17FE1D93E1F700536B3F /* init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = init.m; sourceTree = "<group>"; };
-		CEFC18011D93E23A00536B3F /* .keep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .keep; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,10 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED94D4F1D97CA43007F74AB /* libcrypto.a in Frameworks */,
-				CED94D3F1D97BFCE007F74AB /* libcurl.a in Frameworks */,
-				CE3F0C381D958FA900A9BFAB /* libuv.a in Frameworks */,
-				CED94D2B1D97A248007F74AB /* libmruby.a in Frameworks */,
+				CE56F0A21D980BC20045BAEA /* libuv.a in Frameworks */,
+				CE56F0A01D980B690045BAEA /* libmruby.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,8 +87,8 @@
 		CED94D4A1D97C674007F74AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CED94D4D1D97C697007F74AB /* libssl.a */,
-				CED94D4B1D97C674007F74AB /* libcrypto.a */,
+				CE56F0A11D980BC20045BAEA /* libuv.a */,
+				CE56F09F1D980B690045BAEA /* libmruby.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -105,7 +96,6 @@
 		CEFC17B61D93CE5D00536B3F = {
 			isa = PBXGroup;
 			children = (
-				CEFC18001D93E23A00536B3F /* libs */,
 				CEFC17FB1D93E1E000536B3F /* extensions */,
 				CEFC17C11D93CE5E00536B3F /* huby */,
 				CEFC17D51D93CE5E00536B3F /* hubyTests */,
@@ -188,17 +178,6 @@
 				CEFC17FE1D93E1F700536B3F /* init.m */,
 			);
 			path = alert;
-			sourceTree = "<group>";
-		};
-		CEFC18001D93E23A00536B3F /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				CED94D3E1D97BFCE007F74AB /* libcurl.a */,
-				CED94D2A1D97A248007F74AB /* libmruby.a */,
-				CE3F0C371D958FA900A9BFAB /* libuv.a */,
-				CEFC18011D93E23A00536B3F /* .keep */,
-			);
-			path = libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,7 +286,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEFC18021D93E23A00536B3F /* .keep in Resources */,
 				CEFC17C91D93CE5E00536B3F /* Assets.xcassets in Resources */,
 				CEFC17CC1D93CE5E00536B3F /* MainMenu.xib in Resources */,
 			);
