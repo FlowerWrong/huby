@@ -13,12 +13,12 @@ MRuby::Build.new do |conf|
   # ============================================================================
   # custom mrbgems
   # mruby-polarssl
-  conf.gem github: 'iij/mruby-io'
-  conf.gem github: 'iij/mruby-socket'
-  conf.gem github: 'iij/mruby-mtest'
+  # conf.gem github: 'iij/mruby-io'
+  # conf.gem github: 'iij/mruby-socket'
+  # conf.gem github: 'iij/mruby-mtest'
   # conf.gem github: 'luisbebop/mruby-polarssl'
 
-  conf.gem github: 'iij/mruby-digest'
+  conf.gem github: 'iij/mruby-digest' # no dependency
   # conf.gem github: 'qtkmz/mruby-digest-ffi'
 
   # conf.gem github: 'take-cheeze/mruby-cfunc', branch: 'fix_for_latest_2015_05_29' do |g|
@@ -32,11 +32,7 @@ MRuby::Build.new do |conf|
 
   # conf.gem github: 'mattn/mruby-curl'
 
-  # conf.gem github: 'FlowerWrong/mruby-crypto'
-  # conf.cc.include_paths << '/usr/local/opt/openssl/include'
-  # conf.linker.library_paths << '/usr/local/opt/openssl/lib'
-  # # conf.linker.flags << '-L/usr/local/opt/openssl/lib -lcrypto -lz'
-  # conf.linker.libraries << 'crypto'
+  conf.gem github: 'FlowerWrong/mruby-crypto' # no dependency
 
   # mruby-secure-random
   # conf.gem github: 'iij/mruby-pack'
@@ -47,9 +43,12 @@ MRuby::Build.new do |conf|
   conf.gem github: 'iij/mruby-tempfile'
   conf.gem github: 'iij/mruby-require'
 
+  # conf.gem github: 'Asmod4n/mruby-tls'
+  # conf.gem github: 'iij/mruby-tls-openssl'
+
   # mruby-libuv
   # conf.cc.flags << '-DMRB_INT64'
-  conf.gem github: 'jbreeden/mruby-libuv'
+  conf.gem github: 'jbreeden/mruby-libuv' # no dependency
   conf.cc.flags << `pkg-config libuv --cflags`.strip
   conf.linker.flags << `pkg-config libuv --libs`.strip
 
