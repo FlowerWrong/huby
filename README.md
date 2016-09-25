@@ -32,6 +32,8 @@ MyModule.my_c_method('NSAlert')
 
 * [mruby-libuv](https://github.com/jbreeden/mruby-libuv)
 * [mruby-polarssl](https://github.com/luisbebop/mruby-polarssl)
+* [mruby-require](https://github.com/iij/mruby-require)
+* [mruby-secure-random](https://github.com/monochromegane/mruby-secure-random)
 
 ## References
 

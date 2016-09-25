@@ -13,6 +13,22 @@ task :build_libuv do
   cd '..'
 end
 
+task :build_openssl do
+  cd 'openssl'
+  sh './Configure darwin64-x86_64-cc'
+  sh 'make'
+  cd '..'
+end
+
+task :build_curl do
+  cd 'curl'
+  sh './buildconf'
+  sh './configure --with-darwinssl'
+  sh 'make'
+  # sh 'make test'
+  cd '..'
+end
+
 task :build_mruby do
   mv('./mruby/build_config.rb', './build_config_copy.rb')
   cp('./build_config.rb', './mruby/build_config.rb')
