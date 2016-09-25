@@ -10,8 +10,7 @@
 		CE3F0C381D958FA900A9BFAB /* libuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3F0C371D958FA900A9BFAB /* libuv.a */; };
 		CED94D2B1D97A248007F74AB /* libmruby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CED94D2A1D97A248007F74AB /* libmruby.a */; };
 		CED94D3F1D97BFCE007F74AB /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CED94D3E1D97BFCE007F74AB /* libcurl.a */; };
-		CED94D411D97C2B0007F74AB /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CED94D401D97C2B0007F74AB /* libcrypto.a */; };
-		CED94D431D97C2E7007F74AB /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CED94D421D97C2E7007F74AB /* libssl.a */; };
+		CED94D4F1D97CA43007F74AB /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CED94D4B1D97C674007F74AB /* libcrypto.a */; };
 		CEFC17C41D93CE5E00536B3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC17C31D93CE5E00536B3F /* AppDelegate.m */; };
 		CEFC17C71D93CE5E00536B3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC17C61D93CE5E00536B3F /* main.m */; };
 		CEFC17C91D93CE5E00536B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFC17C81D93CE5E00536B3F /* Assets.xcassets */; };
@@ -44,8 +43,8 @@
 		CE3F0C371D958FA900A9BFAB /* libuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuv.a; path = libuv/build/Release/libuv.a; sourceTree = SOURCE_ROOT; };
 		CED94D2A1D97A248007F74AB /* libmruby.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmruby.a; path = mruby/build/host/lib/libmruby.a; sourceTree = SOURCE_ROOT; };
 		CED94D3E1D97BFCE007F74AB /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = curl/lib/.libs/libcurl.a; sourceTree = SOURCE_ROOT; };
-		CED94D401D97C2B0007F74AB /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = openssl/libcrypto.a; sourceTree = SOURCE_ROOT; };
-		CED94D421D97C2E7007F74AB /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = openssl/libssl.a; sourceTree = SOURCE_ROOT; };
+		CED94D4B1D97C674007F74AB /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = openssl/libcrypto.a; sourceTree = "<group>"; };
+		CED94D4D1D97C697007F74AB /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = openssl/libssl.a; sourceTree = "<group>"; };
 		CEFC17BF1D93CE5E00536B3F /* huby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFC17C21D93CE5E00536B3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEFC17C31D93CE5E00536B3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,10 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED94D431D97C2E7007F74AB /* libssl.a in Frameworks */,
+				CED94D4F1D97CA43007F74AB /* libcrypto.a in Frameworks */,
 				CED94D3F1D97BFCE007F74AB /* libcurl.a in Frameworks */,
 				CE3F0C381D958FA900A9BFAB /* libuv.a in Frameworks */,
-				CED94D411D97C2B0007F74AB /* libcrypto.a in Frameworks */,
 				CED94D2B1D97A248007F74AB /* libmruby.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CED94D4A1D97C674007F74AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CED94D4D1D97C697007F74AB /* libssl.a */,
+				CED94D4B1D97C674007F74AB /* libcrypto.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CEFC17B61D93CE5D00536B3F = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +111,7 @@
 				CEFC17D51D93CE5E00536B3F /* hubyTests */,
 				CEFC17E01D93CE5E00536B3F /* hubyUITests */,
 				CEFC17C01D93CE5E00536B3F /* Products */,
+				CED94D4A1D97C674007F74AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,8 +193,6 @@
 		CEFC18001D93E23A00536B3F /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				CED94D421D97C2E7007F74AB /* libssl.a */,
-				CED94D401D97C2B0007F74AB /* libcrypto.a */,
 				CED94D3E1D97BFCE007F74AB /* libcurl.a */,
 				CED94D2A1D97A248007F74AB /* libmruby.a */,
 				CE3F0C371D958FA900A9BFAB /* libuv.a */,
@@ -483,8 +489,6 @@
 					"$(PROJECT_DIR)/mruby/build/host/lib",
 					"$(PROJECT_DIR)/libuv/build/Release",
 					"$(PROJECT_DIR)/openssl",
-					/usr/local/Cellar/openssl/1.0.2i/lib,
-					/usr/local/Cellar/curl/7.50.3/lib,
 					"$(PROJECT_DIR)/curl/lib/.libs",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liveneeq.huby;
@@ -510,8 +514,6 @@
 					"$(PROJECT_DIR)/mruby/build/host/lib",
 					"$(PROJECT_DIR)/libuv/build/Release",
 					"$(PROJECT_DIR)/openssl",
-					/usr/local/Cellar/openssl/1.0.2i/lib,
-					/usr/local/Cellar/curl/7.50.3/lib,
 					"$(PROJECT_DIR)/curl/lib/.libs",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liveneeq.huby;

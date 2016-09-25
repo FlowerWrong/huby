@@ -32,11 +32,11 @@ MRuby::Build.new do |conf|
 
   conf.gem github: 'mattn/mruby-curl'
 
-  # conf.gem github: 'FlowerWrong/mruby-crypto'
-  conf.gem '/Users/kingyang/dev/ruby/mruby-crypto'
-  # conf.linker.libraries << 'crypto'
-  conf.cc.flags << '-I/usr/local/opt/openssl/include'
-  conf.linker.flags << '-L/usr/local/opt/openssl/lib -lcrypto -lz'
+  conf.gem github: 'FlowerWrong/mruby-crypto'
+  conf.cc.include_paths << '/usr/local/opt/openssl/include'
+  conf.linker.library_paths << '/usr/local/opt/openssl/lib'
+  # conf.linker.flags << '-L/usr/local/opt/openssl/lib -lcrypto -lz'
+  conf.linker.libraries << 'crypto'
 
   # mruby-secure-random
   conf.gem github: 'iij/mruby-pack'
