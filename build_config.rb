@@ -7,18 +7,8 @@ MRuby::Build.new do |conf|
   else
     toolchain :gcc
   end
-  # toolchain :clang
 
   enable_debug
-
-  # Use mrbgems
-  # conf.gem 'examples/mrbgems/ruby_extension_example'
-  # conf.gem 'examples/mrbgems/c_extension_example' do |g|
-  #   g.cc.flags << '-g' # append cflags in this gem
-  # end
-  # conf.gem 'examples/mrbgems/c_and_ruby_extension_example'
-  # conf.gem :github => 'masuidrive/mrbgems-example', :checksum_hash => '76518e8aecd131d047378448ac8055fa29d974a9'
-  # conf.gem :git => 'git@github.com:masuidrive/mrbgems-example.git', :branch => 'master', :options => '-v'
 
   # ============================================================================
   # custom mrbgems
@@ -29,6 +19,16 @@ MRuby::Build.new do |conf|
   # conf.gem github: 'luisbebop/mruby-polarssl'
 
   conf.gem github: 'iij/mruby-digest'
+  # conf.gem github: 'qtkmz/mruby-digest-ffi'
+
+  # conf.gem github: 'take-cheeze/mruby-cfunc', branch: 'fix_for_latest_2015_05_29' do |g|
+  #   # g.use_pkg_config # use pkg-config for libffi linking
+  #   g.download_libffi # download and link latest libffi
+  #
+  #   # if your libffi is installed in a non standard path
+  #   # g.cc.include_paths << '[...]/include'
+  #   # g.linker.library_paths << '[...]/lib'
+  # end
 
   # conf.gem github: 'mattn/mruby-curl'
 
@@ -39,8 +39,8 @@ MRuby::Build.new do |conf|
   # conf.linker.libraries << 'crypto'
 
   # mruby-secure-random
-  conf.gem github: 'iij/mruby-pack'
-  conf.gem github: 'monochromegane/mruby-secure-random'
+  # conf.gem github: 'iij/mruby-pack'
+  # conf.gem github: 'monochromegane/mruby-secure-random'
 
   # mruby-require
   conf.gem github: 'iij/mruby-dir'
