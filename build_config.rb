@@ -35,6 +35,9 @@ MRuby::Build.new do |conf|
   conf.gem github: 'AndrewBelt/mruby-yaml' # worked
   # conf.gem github: 'jbreeden/mruby-zlib' error: implicit declaration
 
+  # conf.gem github: 'ksss/mruby-signal'
+  conf.gem github: 'matsumoto-r/mruby-uname'
+
   # ============================================================================
   # mruby-require
   conf.gem github: 'iij/mruby-dir'
