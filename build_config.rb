@@ -41,6 +41,7 @@ MRuby::Build.new do |conf|
   # ============================================================================
   # mruby-require
   conf.gem github: 'iij/mruby-dir'
+  conf.gem github: 'gromnitsky/mruby-dir-glob'
   conf.gem github: 'iij/mruby-tempfile'
   conf.gem github: 'iij/mruby-require' # worked
 
@@ -56,6 +57,8 @@ MRuby::Build.new do |conf|
 
   conf.gem github: 'matsumoto-r/mruby-sleep' # worked
   conf.gem github: 'ascaridol/mruby-statemachine' # worked
+
+  conf.gem github: 'iij/mruby-env'
 
   # ============================================================================
   # http client
@@ -87,6 +90,8 @@ MRuby::Build.new do |conf|
     g.download_libffi
   end
   conf.gem github: 'schmurfy/mruby-rubyffi-compat'
+
+  # conf.gem github: 'schmurfy/host-stats' not work
 
 
   # conf.gem github: 'kjunichi/mruby-mrmagick' # TODO
