@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE167A7E1D98BE1F006FFB88 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE167A7D1D98BE1F006FFB88 /* libffi.a */; };
 		CE56F0A01D980B690045BAEA /* libmruby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE56F09F1D980B690045BAEA /* libmruby.a */; };
 		CE56F0A21D980BC20045BAEA /* libuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE56F0A11D980BC20045BAEA /* libuv.a */; };
 		CEEC99991D985B8B003878D7 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC99971D985B8B003878D7 /* libcrypto.a */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE167A7D1D98BE1F006FFB88 /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libffi.a; path = "mruby/build/libffi/host/libffi-3.0.13/lib/libffi.a"; sourceTree = "<group>"; };
 		CE56F09F1D980B690045BAEA /* libmruby.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmruby.a; path = mruby/build/host/lib/libmruby.a; sourceTree = "<group>"; };
 		CE56F0A11D980BC20045BAEA /* libuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuv.a; path = libuv/build/Release/libuv.a; sourceTree = "<group>"; };
 		CEEC99971D985B8B003878D7 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "mruby/build/host/mrbgems/mruby-crypto/openssldir/lib/libcrypto.a"; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE167A7E1D98BE1F006FFB88 /* libffi.a in Frameworks */,
 				CEEC99991D985B8B003878D7 /* libcrypto.a in Frameworks */,
 				CEEC999A1D985B8B003878D7 /* libssl.a in Frameworks */,
 				CE56F0A21D980BC20045BAEA /* libuv.a in Frameworks */,
@@ -93,6 +96,7 @@
 		CED94D4A1D97C674007F74AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE167A7D1D98BE1F006FFB88 /* libffi.a */,
 				CEEC99971D985B8B003878D7 /* libcrypto.a */,
 				CEEC99981D985B8B003878D7 /* libssl.a */,
 				CE56F0A11D980BC20045BAEA /* libuv.a */,
@@ -467,6 +471,7 @@
 					"$(SRCROOT)/libuv/include",
 					"$(SRCROOT)/curl/include",
 					"$(SRCROOT)/mruby/build/host/mrbgems/mruby-crypto/openssldir/include",
+					"$(SRCROOT)/mruby/build/libffi/host/libffi-3.0.13/lib/libffi-3.0.13/include",
 				);
 				INFOPLIST_FILE = huby/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -476,6 +481,7 @@
 					"$(PROJECT_DIR)/libuv/build/Release",
 					"$(PROJECT_DIR)/curl/lib/.libs",
 					"$(PROJECT_DIR)/mruby/build/host/mrbgems/mruby-crypto/openssldir/lib",
+					"$(PROJECT_DIR)/mruby/build/libffi/host/libffi-3.0.13/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liveneeq.huby;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -492,6 +498,7 @@
 					"$(SRCROOT)/libuv/include",
 					"$(SRCROOT)/curl/include",
 					"$(SRCROOT)/mruby/build/host/mrbgems/mruby-crypto/openssldir/include",
+					"$(SRCROOT)/mruby/build/libffi/host/libffi-3.0.13/lib/libffi-3.0.13/include",
 				);
 				INFOPLIST_FILE = huby/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -501,6 +508,7 @@
 					"$(PROJECT_DIR)/libuv/build/Release",
 					"$(PROJECT_DIR)/curl/lib/.libs",
 					"$(PROJECT_DIR)/mruby/build/host/mrbgems/mruby-crypto/openssldir/lib",
+					"$(PROJECT_DIR)/mruby/build/libffi/host/libffi-3.0.13/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liveneeq.huby;
 				PRODUCT_NAME = "$(TARGET_NAME)";
