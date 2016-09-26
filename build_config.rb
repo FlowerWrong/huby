@@ -10,6 +10,9 @@ MRuby::Build.new do |conf|
 
   enable_debug
 
+  # include the default GEMs
+  conf.gembox 'default'
+
   # ============================================================================
   conf.gem github: 'iij/mruby-digest' # worked # no dependency
   conf.gem github: 'FlowerWrong/mruby-crypto' # worked # no dependency
@@ -26,7 +29,6 @@ MRuby::Build.new do |conf|
   conf.gem github: 'iij/mruby-iijson' # worked
   conf.gem github: 'iij/mruby-ipaddr' # worked
   # conf.gem github: 'carsonmcdonald/mruby-markdown' # TODO
-  # conf.gem github: 'kjunichi/mruby-mrmagick' # TODO
 
   # conf.gem github: 'h2so5/mruby-tinyxml2' # TODO compile failed
   conf.gem github: 'jbreeden/mruby-sqlite' # worked
@@ -78,15 +80,13 @@ MRuby::Build.new do |conf|
 
   # ============================================================================
   # libffi # worked
-  conf.gem "#{root}/mrbgems/mruby-eval"
   conf.gem github: 'fundamental/mruby-cfunc', branch: 'master' do |g|
     g.download_libffi
   end
-  conf.gem "#{root}/mrbgems/mruby-struct"
   conf.gem github: 'schmurfy/mruby-rubyffi-compat'
 
-  # ============================================================================
 
-  # include the default GEMs
-  conf.gembox 'default'
+  conf.gem github: 'kjunichi/mruby-mrmagick' # TODO
+
+  # ============================================================================
 end
