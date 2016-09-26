@@ -4,24 +4,35 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "55A7FB660E25DAD7EFF279C9F437500B47348AC7" : 9223372036854775807,
+    "F91706FF9E34BA9B4C9B854D68D187A438CCC7B4" : 9223372036854775807,
     "BC09C09DC2853BA9B3A84860F78F2E9FD790D8C3" : 9223372036854775807,
-    "E44DB982BFFA2C5D8E8B4670F62226FF0023D4DD" : 9223372036854775807,
+    "F2BA2ED22B636B87536A3CBA88D6A5E57DCAC306" : 9223372036854775807,
+    "1472412A1A40EF795F29C7EBF79DE9C343137C4D" : 9223372036854775807,
     "C234C1E9A41CBFBE2C1BE438DDEEEC8A827829BE" : 9223372036854775807,
-    "1472412A1A40EF795F29C7EBF79DE9C343137C4D" : 9223372036854775807
+    "E44DB982BFFA2C5D8E8B4670F62226FF0023D4DD" : 9223372036854775807,
+    "06B0A1452D12A9F2205D175A29A89222726AA747" : 9223372036854775807,
+    "55A7FB660E25DAD7EFF279C9F437500B47348AC7" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2F606B35-FA84-401C-ABED-B75384D4E724",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "55A7FB660E25DAD7EFF279C9F437500B47348AC7" : "huby\/openssl\/",
+    "F91706FF9E34BA9B4C9B854D68D187A438CCC7B4" : "huby\/mruby\/build\/host\/mrbgems\/mruby-redis\/hiredis\/",
     "BC09C09DC2853BA9B3A84860F78F2E9FD790D8C3" : "huby\/libuv\/",
-    "E44DB982BFFA2C5D8E8B4670F62226FF0023D4DD" : "huby\/",
+    "F2BA2ED22B636B87536A3CBA88D6A5E57DCAC306" : "huby\/libyaml\/",
+    "1472412A1A40EF795F29C7EBF79DE9C343137C4D" : "huby\/curl\/",
     "C234C1E9A41CBFBE2C1BE438DDEEEC8A827829BE" : "huby\/mruby\/",
-    "1472412A1A40EF795F29C7EBF79DE9C343137C4D" : "huby\/curl\/"
+    "E44DB982BFFA2C5D8E8B4670F62226FF0023D4DD" : "huby\/",
+    "06B0A1452D12A9F2205D175A29A89222726AA747" : "..\/..\/ruby\/mruby-crypto",
+    "55A7FB660E25DAD7EFF279C9F437500B47348AC7" : "huby\/openssl\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "huby",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "huby.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/FlowerWrong\/mruby-crypto.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "06B0A1452D12A9F2205D175A29A89222726AA747"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/curl\/curl.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
@@ -46,6 +57,16 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/FlowerWrong\/huby.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E44DB982BFFA2C5D8E8B4670F62226FF0023D4DD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yaml\/libyaml.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F2BA2ED22B636B87536A3CBA88D6A5E57DCAC306"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/redis\/hiredis.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F91706FF9E34BA9B4C9B854D68D187A438CCC7B4"
     }
   ]
 }

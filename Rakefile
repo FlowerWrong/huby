@@ -29,6 +29,20 @@ task :build_curl do
   cd '..'
 end
 
+task :build_libyaml do
+  cd 'libyaml'
+  sh './bootstrap'
+  sh './configure'
+  sh 'make'
+  cd '..'
+end
+
+task :build_hiredis do
+  cd 'hiredis'
+  sh 'make'
+  cd '..'
+end
+
 task :build_mruby do
   mv('./mruby/build_config.rb', './build_config_copy.rb')
   cp('./build_config.rb', './mruby/build_config.rb')

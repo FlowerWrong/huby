@@ -10,3 +10,9 @@
 [submodule "curl"]
 	path = curl
 	url = https://github.com/curl/curl.git
+[submodule "libyaml"]
+	path = libyaml
+	url = https://github.com/yaml/libyaml.git
+[submodule "hiredis"]
+	path = hiredis
+	url = https://github.com/redis/hiredis.git
