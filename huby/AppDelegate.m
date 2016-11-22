@@ -14,19 +14,21 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+
 // https://developer.apple.com/reference/objectivec/1657527-objective_c_runtime
 // https://github.com/mruby/mruby/blob/master/src/class.c#L437
 // https://github.com/skandhas/mruby-core-ext/blob/master/src/core_ext_hash.c
+
+// FIXME gc
 static mrb_value my_c_method(mrb_state *mrb, mrb_value self)
 {
     puts("Called my C method");
     char *class_name;
-    // Extract a value
     mrb_get_args(mrb, "z", &class_name);
     NSLog(@"class_name is %s", class_name);
     Class theClass = NSClassFromString(@"NSAlert");
     id alert = [[theClass alloc] init];
-    // NSAlert *alert = [NSAlert new];
+    // NSAlert *alert = [[NSAlert alloc] init];
     [alert addButtonWithTitle:@"确定"];
     [alert addButtonWithTitle:@"取消"];
     [alert setMessageText:@"确定删除输入文本?"];
